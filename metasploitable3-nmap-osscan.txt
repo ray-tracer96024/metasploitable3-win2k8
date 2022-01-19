@@ -1,0 +1,189 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-01-19 19:04 IST
+Nmap scan report for 192.168.56.103
+Host is up (0.0011s latency).
+Not shown: 978 closed tcp ports (reset)
+PORT      STATE SERVICE              VERSION
+22/tcp    open  ssh                  OpenSSH 7.1 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 df:ad:f5:41:2b:0e:20:7d:fa:e6:8d:ea:36:e1:8b:4d (RSA)
+|_  521 82:d7:58:44:6e:9b:57:a4:a4:c0:28:7f:f4:52:1f:2d (ECDSA)
+135/tcp   open  msrpc                Microsoft Windows RPC
+139/tcp   open  netbios-ssn          Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds         Windows Server 2008 R2 Standard 7601 Service Pack 1 microsoft-ds
+3000/tcp  open  http                 WEBrick httpd 1.3.1 (Ruby 2.3.3 (2016-11-21))
+|_http-server-header: WEBrick/1.3.1 (Ruby/2.3.3/2016-11-21)
+|_http-title: Ruby on Rails: Welcome aboard
+3306/tcp  open  mysql                MySQL (blocked - too many connection errors)
+3389/tcp  open  ms-wbt-server?
+| rdp-ntlm-info: 
+|   Target_Name: VAGRANT-2008R2
+|   NetBIOS_Domain_Name: VAGRANT-2008R2
+|   NetBIOS_Computer_Name: VAGRANT-2008R2
+|   DNS_Domain_Name: vagrant-2008R2
+|   DNS_Computer_Name: vagrant-2008R2
+|   Product_Version: 6.1.7601
+|_  System_Time: 2022-01-19T13:39:54+00:00
+| ssl-cert: Subject: commonName=vagrant-2008R2
+| Not valid before: 2022-01-18T12:43:58
+|_Not valid after:  2022-07-20T12:43:58
+|_ssl-date: 2022-01-19T13:40:03+00:00; -1s from scanner time.
+3920/tcp  open  ssl/exasoftport1?
+| ssl-cert: Subject: commonName=localhost/organizationName=Oracle Corporation/stateOrProvinceName=California/countryName=US
+| Not valid before: 2013-05-15T05:33:38
+|_Not valid after:  2023-05-13T05:33:38
+|_ssl-date: 2022-01-19T13:40:03+00:00; 0s from scanner time.
+4848/tcp  open  ssl/http             Oracle GlassFish 4.0 (Servlet 3.1; JSP 2.3; Java 1.8)
+|_http-server-header: GlassFish Server Open Source Edition  4.0 
+| ssl-cert: Subject: commonName=localhost/organizationName=Oracle Corporation/stateOrProvinceName=California/countryName=US
+| Not valid before: 2013-05-15T05:33:38
+|_Not valid after:  2023-05-13T05:33:38
+|_ssl-date: 2022-01-19T13:40:03+00:00; -1s from scanner time.
+|_http-title: Login
+7676/tcp  open  java-message-service Java Message Service 301
+8009/tcp  open  ajp13                Apache Jserv (Protocol v1.3)
+|_ajp-methods: Failed to get a valid response for the OPTION request
+8022/tcp  open  http                 Apache Tomcat/Coyote JSP engine 1.1
+| http-methods: 
+|_  Potentially risky methods: PUT DELETE
+|_http-server-header: Apache-Coyote/1.1
+|_http-title: Site doesn't have a title (text/html;charset=UTF-8).
+8031/tcp  open  ssl/unknown
+8080/tcp  open  http                 Oracle GlassFish 4.0 (Servlet 3.1; JSP 2.3; Java 1.8)
+| http-methods: 
+|_  Potentially risky methods: PUT DELETE TRACE
+|_http-server-header: GlassFish Server Open Source Edition  4.0 
+|_http-title: GlassFish Server - Server Running
+8181/tcp  open  ssl/http             Oracle GlassFish 4.0 (Servlet 3.1; JSP 2.3; Java 1.8)
+| ssl-cert: Subject: commonName=localhost/organizationName=Oracle Corporation/stateOrProvinceName=California/countryName=US
+| Not valid before: 2013-05-15T05:33:38
+|_Not valid after:  2023-05-13T05:33:38
+|_ssl-date: 2022-01-19T13:40:03+00:00; -1s from scanner time.
+|_http-title: GlassFish Server - Server Running
+|_http-server-header: GlassFish Server Open Source Edition  4.0 
+| http-methods: 
+|_  Potentially risky methods: PUT DELETE TRACE
+8383/tcp  open  http                 Apache httpd
+|_http-server-header: Apache
+| http-methods: 
+|_  Potentially risky methods: PUT DELETE
+|_http-title: 400 Bad Request
+8443/tcp  open  ssl/https-alt?
+9200/tcp  open  wap-wsp?
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Content-Type: text/plain; charset=UTF-8
+|     Content-Length: 80
+|     handler found for uri [/nice%20ports%2C/Tri%6Eity.txt%2ebak] and method [GET]
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Content-Type: application/json; charset=UTF-8
+|     Content-Length: 309
+|     "status" : 200,
+|     "name" : "Lodestone",
+|     "version" : {
+|     "number" : "1.1.1",
+|     "build_hash" : "f1585f096d3f3985e73456debdc1a0745f512bbc",
+|     "build_timestamp" : "2014-04-16T14:27:12Z",
+|     "build_snapshot" : false,
+|     "lucene_version" : "4.7"
+|     "tagline" : "You Know, for Search"
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Content-Type: text/plain; charset=UTF-8
+|     Content-Length: 0
+|   OfficeScan: 
+|     HTTP/1.1 200 OK
+|     Content-Type: application/json; charset=UTF-8
+|     Content-Length: 309
+|     "status" : 200,
+|     "name" : "Lodestone",
+|     "version" : {
+|     "number" : "1.1.1",
+|     "build_hash" : "f1585f096d3f3985e73456debdc1a0745f512bbc",
+|     "build_timestamp" : "2014-04-16T14:27:12Z",
+|     "build_snapshot" : false,
+|     "lucene_version" : "4.7"
+|     "tagline" : "You Know, for Search"
+|   RTSPRequest, SIPOptions: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/plain; charset=UTF-8
+|     Content-Length: 0
+|   apple-iphoto: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=UTF-8
+|     Content-Length: 56
+|_    handler found for uri [/server-info] and method [GET]
+49152/tcp open  msrpc                Microsoft Windows RPC
+49153/tcp open  msrpc                Microsoft Windows RPC
+49154/tcp open  msrpc                Microsoft Windows RPC
+49155/tcp open  msrpc                Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9200-TCP:V=7.92%I=9%D=1/19%Time=61E81387%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,18C,"HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20application/js
+SF:on;\x20charset=UTF-8\r\nContent-Length:\x20309\r\n\r\n{\r\n\x20\x20\"st
+SF:atus\"\x20:\x20200,\r\n\x20\x20\"name\"\x20:\x20\"Lodestone\",\r\n\x20\
+SF:x20\"version\"\x20:\x20{\r\n\x20\x20\x20\x20\"number\"\x20:\x20\"1\.1\.
+SF:1\",\r\n\x20\x20\x20\x20\"build_hash\"\x20:\x20\"f1585f096d3f3985e73456
+SF:debdc1a0745f512bbc\",\r\n\x20\x20\x20\x20\"build_timestamp\"\x20:\x20\"
+SF:2014-04-16T14:27:12Z\",\r\n\x20\x20\x20\x20\"build_snapshot\"\x20:\x20f
+SF:alse,\r\n\x20\x20\x20\x20\"lucene_version\"\x20:\x20\"4\.7\"\r\n\x20\x2
+SF:0},\r\n\x20\x20\"tagline\"\x20:\x20\"You\x20Know,\x20for\x20Search\"\r\
+SF:n}\n")%r(HTTPOptions,4F,"HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20tex
+SF:t/plain;\x20charset=UTF-8\r\nContent-Length:\x200\r\n\r\n")%r(RTSPReque
+SF:st,4F,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text/plain;\x20charse
+SF:t=UTF-8\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,A9,"HTTP/
+SF:1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charse
+SF:t=UTF-8\r\nContent-Length:\x2080\r\n\r\nNo\x20handler\x20found\x20for\x
+SF:20uri\x20\[/nice%20ports%2C/Tri%6Eity\.txt%2ebak\]\x20and\x20method\x20
+SF:\[GET\]")%r(SIPOptions,4F,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20t
+SF:ext/plain;\x20charset=UTF-8\r\nContent-Length:\x200\r\n\r\n")%r(OfficeS
+SF:can,18C,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20application/json;\x
+SF:20charset=UTF-8\r\nContent-Length:\x20309\r\n\r\n{\r\n\x20\x20\"status\
+SF:"\x20:\x20200,\r\n\x20\x20\"name\"\x20:\x20\"Lodestone\",\r\n\x20\x20\"
+SF:version\"\x20:\x20{\r\n\x20\x20\x20\x20\"number\"\x20:\x20\"1\.1\.1\",\
+SF:r\n\x20\x20\x20\x20\"build_hash\"\x20:\x20\"f1585f096d3f3985e73456debdc
+SF:1a0745f512bbc\",\r\n\x20\x20\x20\x20\"build_timestamp\"\x20:\x20\"2014-
+SF:04-16T14:27:12Z\",\r\n\x20\x20\x20\x20\"build_snapshot\"\x20:\x20false,
+SF:\r\n\x20\x20\x20\x20\"lucene_version\"\x20:\x20\"4\.7\"\r\n\x20\x20},\r
+SF:\n\x20\x20\"tagline\"\x20:\x20\"You\x20Know,\x20for\x20Search\"\r\n}\n"
+SF:)%r(apple-iphoto,91,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type
+SF::\x20text/plain;\x20charset=UTF-8\r\nContent-Length:\x2056\r\n\r\nNo\x2
+SF:0handler\x20found\x20for\x20uri\x20\[/server-info\]\x20and\x20method\x2
+SF:0\[GET\]");
+MAC Address: 08:00:27:E3:8F:C9 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Microsoft Windows 7
+OS CPE: cpe:/o:microsoft:windows_7::sp1
+OS details: Microsoft Windows 7 SP1
+Network Distance: 1 hop
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2022-01-19T13:39:51
+|_  start_date: 2022-01-19T13:16:20
+|_nbstat: NetBIOS name: VAGRANT-2008R2, NetBIOS user: <unknown>, NetBIOS MAC: 08:00:27:e3:8f:c9 (Oracle VirtualBox virtual NIC)
+|_clock-skew: mean: 1h00m00s, deviation: 2h49m45s, median: -1s
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.1: 
+|_    Message signing enabled but not required
+| smb-os-discovery: 
+|   OS: Windows Server 2008 R2 Standard 7601 Service Pack 1 (Windows Server 2008 R2 Standard 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_server_2008::sp1
+|   Computer name: vagrant-2008R2
+|   NetBIOS computer name: VAGRANT-2008R2\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2022-01-19T05:39:51-08:00
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.06 ms 192.168.56.103
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 329.25 seconds

@@ -1,0 +1,511 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-01-19 19:01 IST
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:01
+Completed NSE at 19:01, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:01
+Completed NSE at 19:01, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:01
+Completed NSE at 19:01, 0.00s elapsed
+Initiating ARP Ping Scan at 19:01
+Scanning 192.168.56.103 [1 port]
+Completed ARP Ping Scan at 19:01, 0.04s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 19:01
+Completed Parallel DNS resolution of 1 host. at 19:01, 13.00s elapsed
+DNS resolution of 1 IPs took 13.00s. Mode: Async [#: 2, OK: 0, NX: 0, DR: 1, SF: 0, TR: 4, CN: 0]
+Initiating SYN Stealth Scan at 19:01
+Scanning 192.168.56.103 [65535 ports]
+Discovered open port 445/tcp on 192.168.56.103
+Discovered open port 135/tcp on 192.168.56.103
+Discovered open port 22/tcp on 192.168.56.103
+Discovered open port 3389/tcp on 192.168.56.103
+Discovered open port 8080/tcp on 192.168.56.103
+Discovered open port 139/tcp on 192.168.56.103
+Discovered open port 3306/tcp on 192.168.56.103
+Discovered open port 8022/tcp on 192.168.56.103
+Discovered open port 8181/tcp on 192.168.56.103
+Discovered open port 1617/tcp on 192.168.56.103
+Discovered open port 8443/tcp on 192.168.56.103
+Discovered open port 8585/tcp on 192.168.56.103
+Discovered open port 3700/tcp on 192.168.56.103
+Discovered open port 8009/tcp on 192.168.56.103
+Discovered open port 49272/tcp on 192.168.56.103
+Discovered open port 8484/tcp on 192.168.56.103
+Discovered open port 49342/tcp on 192.168.56.103
+Discovered open port 3000/tcp on 192.168.56.103
+Discovered open port 49205/tcp on 192.168.56.103
+Discovered open port 3820/tcp on 192.168.56.103
+Discovered open port 8031/tcp on 192.168.56.103
+Discovered open port 49186/tcp on 192.168.56.103
+Discovered open port 49172/tcp on 192.168.56.103
+Discovered open port 49347/tcp on 192.168.56.103
+Discovered open port 49346/tcp on 192.168.56.103
+Discovered open port 49271/tcp on 192.168.56.103
+Discovered open port 49154/tcp on 192.168.56.103
+Discovered open port 47001/tcp on 192.168.56.103
+Discovered open port 8032/tcp on 192.168.56.103
+Discovered open port 4848/tcp on 192.168.56.103
+Discovered open port 8019/tcp on 192.168.56.103
+Discovered open port 49168/tcp on 192.168.56.103
+Discovered open port 8282/tcp on 192.168.56.103
+Discovered open port 49153/tcp on 192.168.56.103
+Discovered open port 5985/tcp on 192.168.56.103
+Discovered open port 49152/tcp on 192.168.56.103
+Discovered open port 8686/tcp on 192.168.56.103
+Discovered open port 7676/tcp on 192.168.56.103
+Discovered open port 49155/tcp on 192.168.56.103
+Discovered open port 8027/tcp on 192.168.56.103
+Discovered open port 49204/tcp on 192.168.56.103
+Discovered open port 9200/tcp on 192.168.56.103
+Discovered open port 8383/tcp on 192.168.56.103
+Discovered open port 8444/tcp on 192.168.56.103
+Discovered open port 8020/tcp on 192.168.56.103
+Discovered open port 3920/tcp on 192.168.56.103
+Discovered open port 9300/tcp on 192.168.56.103
+Discovered open port 49345/tcp on 192.168.56.103
+Discovered open port 8028/tcp on 192.168.56.103
+Completed SYN Stealth Scan at 19:02, 19.97s elapsed (65535 total ports)
+Initiating Service scan at 19:02
+Scanning 49 services on 192.168.56.103
+Completed Service scan at 19:04, 162.12s elapsed (49 services on 1 host)
+Initiating OS detection (try #1) against 192.168.56.103
+Retrying OS detection (try #2) against 192.168.56.103
+NSE: Script scanning 192.168.56.103.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:04
+NSE Timing: About 99.72% done; ETC: 19:05 (0:00:00 remaining)
+Completed NSE at 19:05, 45.77s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:05
+Completed NSE at 19:05, 15.29s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:05
+Completed NSE at 19:05, 0.00s elapsed
+Nmap scan report for 192.168.56.103
+Host is up, received arp-response (0.0013s latency).
+Scanned at 2022-01-19 19:01:47 IST for 247s
+Not shown: 65486 closed tcp ports (reset)
+PORT      STATE SERVICE              REASON          VERSION
+22/tcp    open  ssh                  syn-ack ttl 128 OpenSSH 7.1 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 df:ad:f5:41:2b:0e:20:7d:fa:e6:8d:ea:36:e1:8b:4d (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZacfb8/HhflkaJeQlGwP8m1C+R9owWhvNJc2kcoMUkRhQ0Trern7nMytEKWfSorldCQ6h5nqfuKRzZPMy4nByxtRfBivCEZut1nez8uo4ssE8cdKzWWhFhpNsr7f8JQosz0kFBC33wfVxCbR9lkNt9+Dac1qfzEFPwHkDRlTXm5O7c4ROc6Jq9+vbom8WNC64ivyYFbyQgwDHhR7ie4JdlbwRthfCpV6/OIvif8B+Z1UyprnqO+9cb0NYEhV80Vj5tMCu8TWl//dSdRYPJ8MAUv9OfOuKYNCzmIlgLlOczPn9SlpL5gdyKdWJxiAvmiPu0JiWgMg66QlW68MzjKEX
+|   521 82:d7:58:44:6e:9b:57:a4:a4:c0:28:7f:f4:52:1f:2d (ECDSA)
+|_ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBACm1Lv4RSWtVq7u/mWIGKNKIe9aYq+5O1WCCEOEx7/zHEPGTmISaXEsubymz5zCUDTSIRG258XlWwgcKKJw4x+QRwEbiXFke9LDbAKjHkvulhGGo7i/lwLwyExLO7jh2IxhFe8H7w65huxxo4DMXk8H4bzKn8/Z2WbtgckZKWeVGNaxrA==
+135/tcp   open  msrpc                syn-ack ttl 128 Microsoft Windows RPC
+139/tcp   open  netbios-ssn          syn-ack ttl 128 Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds         syn-ack ttl 128 Windows Server 2008 R2 Standard 7601 Service Pack 1 microsoft-ds
+1617/tcp  open  java-rmi             syn-ack ttl 128 Java RMI
+| rmi-dumpregistry: 
+|   jmxrmi
+|     javax.management.remote.rmi.RMIServerImpl_Stub
+|     @192.168.56.103:49172
+|     extends
+|       java.rmi.server.RemoteStub
+|       extends
+|_        java.rmi.server.RemoteObject
+3000/tcp  open  http                 syn-ack ttl 128 WEBrick httpd 1.3.1 (Ruby 2.3.3 (2016-11-21))
+|_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: WEBrick/1.3.1 (Ruby/2.3.3/2016-11-21)
+|_http-title: Ruby on Rails: Welcome aboard
+3306/tcp  open  mysql                syn-ack ttl 128 MySQL 5.5.20-log
+| mysql-info: 
+|_  MySQL Error: Host '192.168.56.104' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'
+3389/tcp  open  ms-wbt-server?       syn-ack ttl 128
+|_ssl-date: 2022-01-19T13:35:38+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=vagrant-2008R2
+| Issuer: commonName=vagrant-2008R2
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2022-01-18T12:43:58
+| Not valid after:  2022-07-20T12:43:58
+| MD5:   6fa7 9edd 7e97 6d2f b28e b6b6 93eb 3b55
+| SHA-1: a955 2393 b118 5de8 92ba 17e2 e83c 1592 e83b 7d57
+| -----BEGIN CERTIFICATE-----
+| MIIC4DCCAcigAwIBAgIQKMGC9FoP0atIpvpb3NPfQDANBgkqhkiG9w0BAQUFADAZ
+| MRcwFQYDVQQDEw52YWdyYW50LTIwMDhSMjAeFw0yMjAxMTgxMjQzNThaFw0yMjA3
+| MjAxMjQzNThaMBkxFzAVBgNVBAMTDnZhZ3JhbnQtMjAwOFIyMIIBIjANBgkqhkiG
+| 9w0BAQEFAAOCAQ8AMIIBCgKCAQEAorB630WDMJ5csQqWQYJQYGNoNmJCtXf+60bJ
+| 4Bx8Sb7owE2SbFSGDrgjluW1lh1eFjfzu1xrc5C7u7AGROG0VzRGhzRUPHIkwCJL
+| GJ04vQs5SjPCGpzfZW8YUKdKSgC/jinNU4qWuygY1Rm4Lo790dI52OfVIOy28I99
+| odHWqWQQ4kSjiHFpRTHO868jDstd3XGr00zcrwsXRzU9s2OFusHgrHHrued+dt/g
+| Kof8SZmz/K5NIV+MdOYxnnEAeuMnIKprrc3/zVH5JoH1IlBhJM2HiPlAm/EogpAh
+| 4Y97kM0/3lv/OftrRSfPYMPbG/gVURSWbtwFZZCyK4yvcAN7QQIDAQABoyQwIjAT
+| BgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQEFBQAD
+| ggEBABhlyx012c+XbKtsLtiKzm+uhWqGx8dlOUy1B3wkmPKmzPtKb1/bu6br9OX1
+| vad/CPrqfUmz53TKBhaKrdSHhfQ8uut0Kcnd1j6bj877+FWjeLXdHO4xbLmcJTH2
+| cvarcYb5uX6KtG/nS5yhdADQLnobywWf7qwCGjNRFzrNo8N2URDWXuUoH7sicwiJ
+| CfeGPBSLRbxBHabwHCCRnVOWLJLxQzSc6dBop7abvmsm3qqpr/u9NpRBbawz2Ux9
+| xwI2p2mAQUlgmYw+1s8fLwE1PqUKIJyA16YlFa+pAXL7kIGoMkrWb8jgVz5Kquiu
+| F1iQAJBdV+keUXT2hGNfX2YX1hQ=
+|_-----END CERTIFICATE-----
+3700/tcp  open  giop                 syn-ack ttl 128 CORBA naming service
+3820/tcp  open  ssl/giop             syn-ack ttl 128 CORBA naming service
+| ssl-cert: Subject: commonName=localhost/organizationName=Oracle Corporation/stateOrProvinceName=California/countryName=US/organizationalUnitName=GlassFish/localityName=Santa Clara
+| Issuer: commonName=localhost/organizationName=Oracle Corporation/stateOrProvinceName=California/countryName=US/organizationalUnitName=GlassFish/localityName=Santa Clara
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2013-05-15T05:33:38
+| Not valid after:  2023-05-13T05:33:38
+| MD5:   790d fccf 9932 2bbe 7736 404a 14e1 2d91
+| SHA-1: 4a57 58f5 9279 e82f 2a91 3c83 ca65 8d69 6457 5a72
+| -----BEGIN CERTIFICATE-----
+| MIIDmTCCAoGgAwIBAgIEBKmXLzANBgkqhkiG9w0BAQsFADB9MQswCQYDVQQGEwJV
+| UzETMBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UEBxMLU2FudGEgQ2xhcmExGzAZ
+| BgNVBAoTEk9yYWNsZSBDb3Jwb3JhdGlvbjESMBAGA1UECxMJR2xhc3NGaXNoMRIw
+| EAYDVQQDEwlsb2NhbGhvc3QwHhcNMTMwNTE1MDUzMzM4WhcNMjMwNTEzMDUzMzM4
+| WjB9MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UEBxML
+| U2FudGEgQ2xhcmExGzAZBgNVBAoTEk9yYWNsZSBDb3Jwb3JhdGlvbjESMBAGA1UE
+| CxMJR2xhc3NGaXNoMRIwEAYDVQQDEwlsb2NhbGhvc3QwggEiMA0GCSqGSIb3DQEB
+| AQUAA4IBDwAwggEKAoIBAQDS0uc7ZnLAkSc2RGR8fR3OXzgQR7XJiBBkJi8RR1GX
+| gePHIrAEz582eVtF9MHIwOaw4pMagVfAoh4Sws/OEfMLw9ZuTGvM3ygE8BM85b1O
+| clKs1Fp+B9QaMoLssp1TgMX/BXtescdKwmKytWeAVkwGFXVqgf/0e4Gxjc8q12Sl
+| G6LysTSIc2d9PbDmNmp6VSSebhjky1CqJ8IRGIibEGEbbyu9+NWu7xUE6que6HT6
+| jOQ+1h+usmHoDFL+5cazNPpiqRB2wRFOXuHA4NwYN/UqcCmVURvIyovqrg5zb0r2
+| 6xX6VO+yM1Nj++EKtAYkXXSEolflO6ikRFkmWOkkXK6hAgMBAAGjITAfMB0GA1Ud
+| DgQWBBRMBYK9jAK4BQAEFAr7Kar3SGzLhjANBgkqhkiG9w0BAQsFAAOCAQEAEzjp
+| mBaRpqKlmWTxSf3BKw3dicdBaB3+O88f7EeEcw5b4e2us+lny5RkPms4AdKppef7
+| GhKxOzb+CLKj/NsBS8bEQ96olkppEVCFzYZknJgnoxfyzeFTYibP4lSm3aWGElky
+| DMyFMUMgO6O6k3jAgtzVGpVsPfxJH5m8HSjaulBeEpSlEaysGOPaWJzWMlmZK02s
+| xWh65ebMPpsQx63prp7AYnvQrZsEY5LYVPdLgqtLhffvNS1KVqJwNv3kSNWNzx/H
+| KTCRtJtgGc/6THvz+C6QS2vg78aziDHiYLZYjVpO17CXa5oLchJd+L51SuZTjWZu
+| qtKcWJ/UJe3j9BhODA==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2022-01-19T13:35:38+00:00; 0s from scanner time.
+3920/tcp  open  ssl/exasoftport1?    syn-ack ttl 128
+|_ssl-date: 2022-01-19T13:35:38+00:00; -1s from scanner time.
+| ssl-cert: Subject: commonName=localhost/organizationName=Oracle Corporation/stateOrProvinceName=California/countryName=US/organizationalUnitName=GlassFish/localityName=Santa Clara
+| Issuer: commonName=localhost/organizationName=Oracle Corporation/stateOrProvinceName=California/countryName=US/organizationalUnitName=GlassFish/localityName=Santa Clara
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2013-05-15T05:33:38
+| Not valid after:  2023-05-13T05:33:38
+| MD5:   790d fccf 9932 2bbe 7736 404a 14e1 2d91
+| SHA-1: 4a57 58f5 9279 e82f 2a91 3c83 ca65 8d69 6457 5a72
+| -----BEGIN CERTIFICATE-----
+| MIIDmTCCAoGgAwIBAgIEBKmXLzANBgkqhkiG9w0BAQsFADB9MQswCQYDVQQGEwJV
+| UzETMBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UEBxMLU2FudGEgQ2xhcmExGzAZ
+| BgNVBAoTEk9yYWNsZSBDb3Jwb3JhdGlvbjESMBAGA1UECxMJR2xhc3NGaXNoMRIw
+| EAYDVQQDEwlsb2NhbGhvc3QwHhcNMTMwNTE1MDUzMzM4WhcNMjMwNTEzMDUzMzM4
+| WjB9MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UEBxML
+| U2FudGEgQ2xhcmExGzAZBgNVBAoTEk9yYWNsZSBDb3Jwb3JhdGlvbjESMBAGA1UE
+| CxMJR2xhc3NGaXNoMRIwEAYDVQQDEwlsb2NhbGhvc3QwggEiMA0GCSqGSIb3DQEB
+| AQUAA4IBDwAwggEKAoIBAQDS0uc7ZnLAkSc2RGR8fR3OXzgQR7XJiBBkJi8RR1GX
+| gePHIrAEz582eVtF9MHIwOaw4pMagVfAoh4Sws/OEfMLw9ZuTGvM3ygE8BM85b1O
+| clKs1Fp+B9QaMoLssp1TgMX/BXtescdKwmKytWeAVkwGFXVqgf/0e4Gxjc8q12Sl
+| G6LysTSIc2d9PbDmNmp6VSSebhjky1CqJ8IRGIibEGEbbyu9+NWu7xUE6que6HT6
+| jOQ+1h+usmHoDFL+5cazNPpiqRB2wRFOXuHA4NwYN/UqcCmVURvIyovqrg5zb0r2
+| 6xX6VO+yM1Nj++EKtAYkXXSEolflO6ikRFkmWOkkXK6hAgMBAAGjITAfMB0GA1Ud
+| DgQWBBRMBYK9jAK4BQAEFAr7Kar3SGzLhjANBgkqhkiG9w0BAQsFAAOCAQEAEzjp
+| mBaRpqKlmWTxSf3BKw3dicdBaB3+O88f7EeEcw5b4e2us+lny5RkPms4AdKppef7
+| GhKxOzb+CLKj/NsBS8bEQ96olkppEVCFzYZknJgnoxfyzeFTYibP4lSm3aWGElky
+| DMyFMUMgO6O6k3jAgtzVGpVsPfxJH5m8HSjaulBeEpSlEaysGOPaWJzWMlmZK02s
+| xWh65ebMPpsQx63prp7AYnvQrZsEY5LYVPdLgqtLhffvNS1KVqJwNv3kSNWNzx/H
+| KTCRtJtgGc/6THvz+C6QS2vg78aziDHiYLZYjVpO17CXa5oLchJd+L51SuZTjWZu
+| qtKcWJ/UJe3j9BhODA==
+|_-----END CERTIFICATE-----
+4848/tcp  open  ssl/http             syn-ack ttl 128 Oracle GlassFish 4.0 (Servlet 3.1; JSP 2.3; Java 1.8)
+|_http-favicon: Unknown favicon MD5: 121D401A8A17B790DEFA806269F5A6EC
+|_http-server-header: GlassFish Server Open Source Edition  4.0 
+|_ssl-date: 2022-01-19T13:35:38+00:00; -1s from scanner time.
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Login
+| ssl-cert: Subject: commonName=localhost/organizationName=Oracle Corporation/stateOrProvinceName=California/countryName=US/organizationalUnitName=GlassFish/localityName=Santa Clara
+| Issuer: commonName=localhost/organizationName=Oracle Corporation/stateOrProvinceName=California/countryName=US/organizationalUnitName=GlassFish/localityName=Santa Clara
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2013-05-15T05:33:38
+| Not valid after:  2023-05-13T05:33:38
+| MD5:   790d fccf 9932 2bbe 7736 404a 14e1 2d91
+| SHA-1: 4a57 58f5 9279 e82f 2a91 3c83 ca65 8d69 6457 5a72
+| -----BEGIN CERTIFICATE-----
+| MIIDmTCCAoGgAwIBAgIEBKmXLzANBgkqhkiG9w0BAQsFADB9MQswCQYDVQQGEwJV
+| UzETMBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UEBxMLU2FudGEgQ2xhcmExGzAZ
+| BgNVBAoTEk9yYWNsZSBDb3Jwb3JhdGlvbjESMBAGA1UECxMJR2xhc3NGaXNoMRIw
+| EAYDVQQDEwlsb2NhbGhvc3QwHhcNMTMwNTE1MDUzMzM4WhcNMjMwNTEzMDUzMzM4
+| WjB9MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UEBxML
+| U2FudGEgQ2xhcmExGzAZBgNVBAoTEk9yYWNsZSBDb3Jwb3JhdGlvbjESMBAGA1UE
+| CxMJR2xhc3NGaXNoMRIwEAYDVQQDEwlsb2NhbGhvc3QwggEiMA0GCSqGSIb3DQEB
+| AQUAA4IBDwAwggEKAoIBAQDS0uc7ZnLAkSc2RGR8fR3OXzgQR7XJiBBkJi8RR1GX
+| gePHIrAEz582eVtF9MHIwOaw4pMagVfAoh4Sws/OEfMLw9ZuTGvM3ygE8BM85b1O
+| clKs1Fp+B9QaMoLssp1TgMX/BXtescdKwmKytWeAVkwGFXVqgf/0e4Gxjc8q12Sl
+| G6LysTSIc2d9PbDmNmp6VSSebhjky1CqJ8IRGIibEGEbbyu9+NWu7xUE6que6HT6
+| jOQ+1h+usmHoDFL+5cazNPpiqRB2wRFOXuHA4NwYN/UqcCmVURvIyovqrg5zb0r2
+| 6xX6VO+yM1Nj++EKtAYkXXSEolflO6ikRFkmWOkkXK6hAgMBAAGjITAfMB0GA1Ud
+| DgQWBBRMBYK9jAK4BQAEFAr7Kar3SGzLhjANBgkqhkiG9w0BAQsFAAOCAQEAEzjp
+| mBaRpqKlmWTxSf3BKw3dicdBaB3+O88f7EeEcw5b4e2us+lny5RkPms4AdKppef7
+| GhKxOzb+CLKj/NsBS8bEQ96olkppEVCFzYZknJgnoxfyzeFTYibP4lSm3aWGElky
+| DMyFMUMgO6O6k3jAgtzVGpVsPfxJH5m8HSjaulBeEpSlEaysGOPaWJzWMlmZK02s
+| xWh65ebMPpsQx63prp7AYnvQrZsEY5LYVPdLgqtLhffvNS1KVqJwNv3kSNWNzx/H
+| KTCRtJtgGc/6THvz+C6QS2vg78aziDHiYLZYjVpO17CXa5oLchJd+L51SuZTjWZu
+| qtKcWJ/UJe3j9BhODA==
+|_-----END CERTIFICATE-----
+5985/tcp  open  http                 syn-ack ttl 128 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+7676/tcp  open  java-message-service syn-ack ttl 128 Java Message Service 301
+8009/tcp  open  ajp13                syn-ack ttl 128 Apache Jserv (Protocol v1.3)
+|_ajp-methods: Failed to get a valid response for the OPTION request
+8019/tcp  open  qbdb?                syn-ack ttl 128
+8020/tcp  open  http                 syn-ack ttl 128 Apache httpd
+|_http-server-header: Apache
+| http-methods: 
+|   Supported Methods: GET HEAD POST PUT DELETE OPTIONS
+|_  Potentially risky methods: PUT DELETE
+|_http-title: Site doesn't have a title (text/html;charset=UTF-8).
+8022/tcp  open  http                 syn-ack ttl 128 Apache Tomcat/Coyote JSP engine 1.1
+|_http-server-header: Apache-Coyote/1.1
+|_http-title: Site doesn't have a title (text/html;charset=UTF-8).
+| http-methods: 
+|   Supported Methods: GET HEAD POST PUT DELETE OPTIONS
+|_  Potentially risky methods: PUT DELETE
+8027/tcp  open  papachi-p2p-srv?     syn-ack ttl 128
+8028/tcp  open  postgresql           syn-ack ttl 128 PostgreSQL DB
+8031/tcp  open  ssl/unknown          syn-ack ttl 128
+8032/tcp  open  desktop-central      syn-ack ttl 128 ManageEngine Desktop Central DesktopCentralServer
+8080/tcp  open  http                 syn-ack ttl 128 Oracle GlassFish 4.0 (Servlet 3.1; JSP 2.3; Java 1.8)
+|_http-open-proxy: Proxy might be redirecting requests
+| http-methods: 
+|   Supported Methods: GET HEAD POST PUT DELETE TRACE OPTIONS
+|_  Potentially risky methods: PUT DELETE TRACE
+|_http-title: GlassFish Server - Server Running
+|_http-server-header: GlassFish Server Open Source Edition  4.0 
+8181/tcp  open  ssl/http             syn-ack ttl 128 Oracle GlassFish 4.0 (Servlet 3.1; JSP 2.3; Java 1.8)
+| http-methods: 
+|   Supported Methods: GET HEAD POST PUT DELETE TRACE OPTIONS
+|_  Potentially risky methods: PUT DELETE TRACE
+|_ssl-date: 2022-01-19T13:35:38+00:00; 0s from scanner time.
+|_http-title: GlassFish Server - Server Running
+| ssl-cert: Subject: commonName=localhost/organizationName=Oracle Corporation/stateOrProvinceName=California/countryName=US/organizationalUnitName=GlassFish/localityName=Santa Clara
+| Issuer: commonName=localhost/organizationName=Oracle Corporation/stateOrProvinceName=California/countryName=US/organizationalUnitName=GlassFish/localityName=Santa Clara
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2013-05-15T05:33:38
+| Not valid after:  2023-05-13T05:33:38
+| MD5:   790d fccf 9932 2bbe 7736 404a 14e1 2d91
+| SHA-1: 4a57 58f5 9279 e82f 2a91 3c83 ca65 8d69 6457 5a72
+| -----BEGIN CERTIFICATE-----
+| MIIDmTCCAoGgAwIBAgIEBKmXLzANBgkqhkiG9w0BAQsFADB9MQswCQYDVQQGEwJV
+| UzETMBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UEBxMLU2FudGEgQ2xhcmExGzAZ
+| BgNVBAoTEk9yYWNsZSBDb3Jwb3JhdGlvbjESMBAGA1UECxMJR2xhc3NGaXNoMRIw
+| EAYDVQQDEwlsb2NhbGhvc3QwHhcNMTMwNTE1MDUzMzM4WhcNMjMwNTEzMDUzMzM4
+| WjB9MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UEBxML
+| U2FudGEgQ2xhcmExGzAZBgNVBAoTEk9yYWNsZSBDb3Jwb3JhdGlvbjESMBAGA1UE
+| CxMJR2xhc3NGaXNoMRIwEAYDVQQDEwlsb2NhbGhvc3QwggEiMA0GCSqGSIb3DQEB
+| AQUAA4IBDwAwggEKAoIBAQDS0uc7ZnLAkSc2RGR8fR3OXzgQR7XJiBBkJi8RR1GX
+| gePHIrAEz582eVtF9MHIwOaw4pMagVfAoh4Sws/OEfMLw9ZuTGvM3ygE8BM85b1O
+| clKs1Fp+B9QaMoLssp1TgMX/BXtescdKwmKytWeAVkwGFXVqgf/0e4Gxjc8q12Sl
+| G6LysTSIc2d9PbDmNmp6VSSebhjky1CqJ8IRGIibEGEbbyu9+NWu7xUE6que6HT6
+| jOQ+1h+usmHoDFL+5cazNPpiqRB2wRFOXuHA4NwYN/UqcCmVURvIyovqrg5zb0r2
+| 6xX6VO+yM1Nj++EKtAYkXXSEolflO6ikRFkmWOkkXK6hAgMBAAGjITAfMB0GA1Ud
+| DgQWBBRMBYK9jAK4BQAEFAr7Kar3SGzLhjANBgkqhkiG9w0BAQsFAAOCAQEAEzjp
+| mBaRpqKlmWTxSf3BKw3dicdBaB3+O88f7EeEcw5b4e2us+lny5RkPms4AdKppef7
+| GhKxOzb+CLKj/NsBS8bEQ96olkppEVCFzYZknJgnoxfyzeFTYibP4lSm3aWGElky
+| DMyFMUMgO6O6k3jAgtzVGpVsPfxJH5m8HSjaulBeEpSlEaysGOPaWJzWMlmZK02s
+| xWh65ebMPpsQx63prp7AYnvQrZsEY5LYVPdLgqtLhffvNS1KVqJwNv3kSNWNzx/H
+| KTCRtJtgGc/6THvz+C6QS2vg78aziDHiYLZYjVpO17CXa5oLchJd+L51SuZTjWZu
+| qtKcWJ/UJe3j9BhODA==
+|_-----END CERTIFICATE-----
+8282/tcp  open  http                 syn-ack ttl 128 Apache Tomcat/Coyote JSP engine 1.1
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-favicon: Apache Tomcat
+|_http-title: Apache Tomcat/8.0.33
+|_http-server-header: Apache-Coyote/1.1
+8383/tcp  open  http                 syn-ack ttl 128 Apache httpd
+| http-methods: 
+|   Supported Methods: GET HEAD POST PUT DELETE OPTIONS
+|_  Potentially risky methods: PUT DELETE
+|_http-title: 400 Bad Request
+|_http-server-header: Apache
+8443/tcp  open  ssl/https-alt?       syn-ack ttl 128
+8444/tcp  open  desktop-central      syn-ack ttl 128 ManageEngine Desktop Central DesktopCentralServer
+8484/tcp  open  http                 syn-ack ttl 128 Jetty winstone-2.8
+|_http-favicon: Unknown favicon MD5: 23E8C7BD78E8CD826C5A6073B15068B1
+|_http-server-header: Jetty(winstone-2.8)
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Dashboard [Jenkins]
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+8585/tcp  open  http                 syn-ack ttl 128 Apache httpd 2.2.21 ((Win64) PHP/5.3.10 DAV/2)
+|_http-server-header: Apache/2.2.21 (Win64) PHP/5.3.10 DAV/2
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: WAMPSERVER Homepage
+8686/tcp  open  java-rmi             syn-ack ttl 128 Java RMI
+| rmi-dumpregistry: 
+|   vagrant-2008R2/7676/jmxrmi
+|     javax.management.remote.rmi.RMIServerImpl_Stub
+|     @192.168.56.103:49342
+|     extends
+|       java.rmi.server.RemoteStub
+|       extends
+|         java.rmi.server.RemoteObject
+|   jmxrmi
+|     javax.management.remote.rmi.RMIServerImpl_Stub
+|     @192.168.56.103:8686
+|     extends
+|       java.rmi.server.RemoteStub
+|       extends
+|_        java.rmi.server.RemoteObject
+9200/tcp  open  wap-wsp?             syn-ack ttl 128
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Content-Type: text/plain; charset=UTF-8
+|     Content-Length: 80
+|     handler found for uri [/nice%20ports%2C/Tri%6Eity.txt%2ebak] and method [GET]
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Content-Type: application/json; charset=UTF-8
+|     Content-Length: 309
+|     "status" : 200,
+|     "name" : "Lodestone",
+|     "version" : {
+|     "number" : "1.1.1",
+|     "build_hash" : "f1585f096d3f3985e73456debdc1a0745f512bbc",
+|     "build_timestamp" : "2014-04-16T14:27:12Z",
+|     "build_snapshot" : false,
+|     "lucene_version" : "4.7"
+|     "tagline" : "You Know, for Search"
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Content-Type: text/plain; charset=UTF-8
+|     Content-Length: 0
+|   RTSPRequest, SIPOptions: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/plain; charset=UTF-8
+|_    Content-Length: 0
+9300/tcp  open  vrace?               syn-ack ttl 128
+47001/tcp open  http                 syn-ack ttl 128 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49152/tcp open  msrpc                syn-ack ttl 128 Microsoft Windows RPC
+49153/tcp open  msrpc                syn-ack ttl 128 Microsoft Windows RPC
+49154/tcp open  msrpc                syn-ack ttl 128 Microsoft Windows RPC
+49155/tcp open  msrpc                syn-ack ttl 128 Microsoft Windows RPC
+49168/tcp open  unknown              syn-ack ttl 128
+49172/tcp open  java-rmi             syn-ack ttl 128 Java RMI
+49186/tcp open  tcpwrapped           syn-ack ttl 128
+49204/tcp open  ssh                  syn-ack ttl 128 Apache Mina sshd 0.8.0 (protocol 2.0)
+49205/tcp open  jenkins-listener     syn-ack ttl 128 Jenkins TcpSlaveAgentListener
+49271/tcp open  msrpc                syn-ack ttl 128 Microsoft Windows RPC
+49272/tcp open  msrpc                syn-ack ttl 128 Microsoft Windows RPC
+49342/tcp open  java-rmi             syn-ack ttl 128 Java RMI
+49345/tcp open  unknown              syn-ack ttl 128
+49346/tcp open  unknown              syn-ack ttl 128
+49347/tcp open  unknown              syn-ack ttl 128
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9200-TCP:V=7.92%I=7%D=1/19%Time=61E812E3%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,18C,"HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20application/js
+SF:on;\x20charset=UTF-8\r\nContent-Length:\x20309\r\n\r\n{\r\n\x20\x20\"st
+SF:atus\"\x20:\x20200,\r\n\x20\x20\"name\"\x20:\x20\"Lodestone\",\r\n\x20\
+SF:x20\"version\"\x20:\x20{\r\n\x20\x20\x20\x20\"number\"\x20:\x20\"1\.1\.
+SF:1\",\r\n\x20\x20\x20\x20\"build_hash\"\x20:\x20\"f1585f096d3f3985e73456
+SF:debdc1a0745f512bbc\",\r\n\x20\x20\x20\x20\"build_timestamp\"\x20:\x20\"
+SF:2014-04-16T14:27:12Z\",\r\n\x20\x20\x20\x20\"build_snapshot\"\x20:\x20f
+SF:alse,\r\n\x20\x20\x20\x20\"lucene_version\"\x20:\x20\"4\.7\"\r\n\x20\x2
+SF:0},\r\n\x20\x20\"tagline\"\x20:\x20\"You\x20Know,\x20for\x20Search\"\r\
+SF:n}\n")%r(HTTPOptions,4F,"HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20tex
+SF:t/plain;\x20charset=UTF-8\r\nContent-Length:\x200\r\n\r\n")%r(RTSPReque
+SF:st,4F,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text/plain;\x20charse
+SF:t=UTF-8\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,A9,"HTTP/
+SF:1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charse
+SF:t=UTF-8\r\nContent-Length:\x2080\r\n\r\nNo\x20handler\x20found\x20for\x
+SF:20uri\x20\[/nice%20ports%2C/Tri%6Eity\.txt%2ebak\]\x20and\x20method\x20
+SF:\[GET\]")%r(SIPOptions,4F,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20t
+SF:ext/plain;\x20charset=UTF-8\r\nContent-Length:\x200\r\n\r\n");
+MAC Address: 08:00:27:E3:8F:C9 (Oracle VirtualBox virtual NIC)
+OS fingerprint not ideal because: Timing level 5 (Insane) used
+Aggressive OS guesses: Microsoft Windows 7 SP1 (99%), Microsoft Windows 7 SP0 - SP1, Windows Server 2008 SP1, Windows Server 2008 R2, Windows 8, or Windows 8.1 Update 1 (97%), Microsoft Windows 8.1 Update 1 (96%), Microsoft Windows 10 1511 (96%), Microsoft Windows Server 2008 R2 (96%), Microsoft Windows 7 Enterprise SP1 (96%), Microsoft Windows Vista SP1 (95%), Microsoft Windows 8 (95%), Microsoft Windows Server 2008 SP2 (95%), Microsoft Windows 7 or Windows Server 2008 R2 (94%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.92%E=4%D=1/19%OT=22%CT=1%CU=37302%PV=Y%DS=1%DC=D%G=N%M=080027%TM=61E813BA%P=x86_64-pc-linux-gnu)
+SEQ(SP=FF%GCD=1%ISR=10F%TI=I%CI=I%TS=7)
+SEQ(SP=FF%GCD=1%ISR=10F%CI=I%II=I%TS=7)
+OPS(O1=M5B4NW2ST11%O2=M5B4NW2ST11%O3=M5B4NW2NNT11%O4=M5B4NW2ST11%O5=M5B4NW2ST11%O6=M5B4ST11)
+WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FFFF)
+ECN(R=Y%DF=Y%T=80%W=FFFF%O=M5B4NW2NNS%CC=N%Q=)
+T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=Y%T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=80%CD=Z)
+
+Uptime guess: 0.015 days (since Wed Jan 19 18:44:43 2022)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; Device: remote management; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   2.1: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: 59m59s, deviation: 2h49m43s, median: 0s
+| nbstat: NetBIOS name: VAGRANT-2008R2, NetBIOS user: <unknown>, NetBIOS MAC: 08:00:27:e3:8f:c9 (Oracle VirtualBox virtual NIC)
+| Names:
+|   VAGRANT-2008R2<00>   Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   VAGRANT-2008R2<20>   Flags: <unique><active>
+| Statistics:
+|   08 00 27 e3 8f c9 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| smb2-time: 
+|   date: 2022-01-19T13:34:55
+|_  start_date: 2022-01-19T13:16:20
+| smb-os-discovery: 
+|   OS: Windows Server 2008 R2 Standard 7601 Service Pack 1 (Windows Server 2008 R2 Standard 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_server_2008::sp1
+|   Computer name: vagrant-2008R2
+|   NetBIOS computer name: VAGRANT-2008R2\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2022-01-19T05:34:55-08:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 14280/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 12419/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 34236/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 39941/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.28 ms 192.168.56.103
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:05
+Completed NSE at 19:05, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:05
+Completed NSE at 19:05, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:05
+Completed NSE at 19:05, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 259.61 seconds
+           Raw packets sent: 70457 (3.102MB) | Rcvd: 66362 (2.657MB)
